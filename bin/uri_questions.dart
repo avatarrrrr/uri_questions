@@ -1,7 +1,10 @@
-import 'package:uri_questions/1011.dart';
+import 'package:uri_questions/1012.dart';
 import 'dart:io';
 
 void main() {
-  var radius = double.parse(stdin.readLineSync());
-  print(calculateRadius(radius));
+  var values = stdin.readLineSync().split(' ');
+  var valueA = double.parse(values[0]);
+  var valueB = double.parse(values[1]);
+  var valueC = double.parse(values[2]);
+  print(calculateArea(valueA, valueB, valueC));
 }
